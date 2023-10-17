@@ -130,6 +130,7 @@ def train(args: train_args.TrainArgs):
   best_val_opa = -1
   best_val_at_epoch = -1
   train_curve = run_info['train_curve']  # For short.
+  model.load_weights("/kaggle/input/google-fast-or-slow-2/out/tpugraphs_layout/model_d491dcb79d47305d56c4cdbbc4f338a5")
   for i in range(args.epochs):
     old_alsologtostderr = flags.FLAGS.alsologtostderr
     flags.FLAGS.alsologtostderr = True

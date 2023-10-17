@@ -130,7 +130,7 @@ def train(args: train_args.TrainArgs):
   best_val_opa = -1
   best_val_at_epoch = -1
   train_curve = run_info['train_curve']  # For short.
-  for i in range(1,5):
+  for i in range(2,6):
     try:
       model.load_weights("/kaggle/input/google-fast-or-slow-"+str(i)+"/out/tpugraphs_layout/model_d491dcb79d47305d56c4cdbbc4f338a5")
       break

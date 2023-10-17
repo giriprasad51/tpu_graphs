@@ -133,6 +133,8 @@ def train(args: train_args.TrainArgs):
   for i in range(2,6):
     try:
       model.load_weights("/kaggle/input/google-fast-or-slow-"+str(i)+"/out/tpugraphs_layout/model_d491dcb79d47305d56c4cdbbc4f338a5")
+      print("################################################################")
+      print("               model loaded with pretrained weights          ")
       break
     except:
       pass
